@@ -12,7 +12,7 @@ export default function Examples() {
     console.log(selectedTopic);
   }
 
-  let tabContent = <p>Please select a topic.</p>;
+  let tabContent = <p>select.</p>;
 
   if (selectedTopic) {
     tabContent = (
@@ -29,6 +29,7 @@ export default function Examples() {
   return (
     <Section title="Examples" id="examples">
       <Tabs
+        buttonsContainer="menu"
         buttons={
           <>
             <TabButton
