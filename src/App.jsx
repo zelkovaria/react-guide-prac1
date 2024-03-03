@@ -1,16 +1,18 @@
-import Hedaer from "./components/Header/Header.jsx";
-import CoreConcepts from "./components/CoreConcepts.jsx";
-import Examples from "./components/Examples.jsx";
+import Player from "./components/Player.jsx";
+import GameBoard from "./components/GameBoard.jsx";
 
 function App() {
   return (
-    <div>
-      <Hedaer />
-      <main>
-        <CoreConcepts />
-        <Examples />
-      </main>
-    </div>
+    <main>
+      <div id="game-container">
+        <ol id="players">
+          <Player initialNam="player1" symbol="X" />
+          <Player initialName="player2" symbol="O" />
+        </ol>
+        <GameBoard />
+      </div>
+      LOG
+    </main>
   );
 }
 
